@@ -1,0 +1,34 @@
+@url=http://localhost:9000
+
+GET {{url}} 
+
+### PostRequest Login
+POST {{url}}/Login
+Content-Type: application/json
+
+{
+    "password" : "Praktikant",
+    "username" : "Praktikant"
+}
+    
+###
+Post {{url}}/CreateUser
+Content-Type: application/json
+
+{
+    "password" : "Praktikant",
+    "username" : "Praktikant"
+}
+
+###
+Get {{url}}/gettodos
+
+
+###
+Post {{url}}/CreateTodos
+Content-Type: application/json
+
+{
+    "title" : "Aufräumen",
+    "description" : "Dein Zimmer Aufräumen"
+}
